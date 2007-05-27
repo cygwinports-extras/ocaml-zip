@@ -1,0 +1,70 @@
+camlzip
+------------------------------------------
+This Objective Caml library provides easy access to compressed files in 
+ZIP and GZIP format, as well as to Java JAR files.  It provides 
+functions for reading from and writing to compressed files in these 
+formats.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  ocaml-3.09.3-1
+  zlib-1.2.3-2
+
+Build requirements:
+  cygwin-1.5.24-1
+  binutils-20060817-1
+  cygport-0.3.1-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ocaml-3.09.3-1
+  zlib-1.2.3-2
+
+Canonical website:
+  http://cristal.inria.fr/~xleroy/software.html
+
+Canonical download:
+  http://caml.inria.fr/distrib/bazar-ocaml/
+
+-------------------------------------------
+
+Build instructions:
+  unpack camlzip-1.03-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./camlzip-1.03-X.cygport all
+
+This will create:
+  /usr/src/camlzip-1.03-X-src.tar.bz2
+  /usr/src/camlzip-1.03-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/stublibs/dllcamlzip.so
+  /usr/lib/ocaml/zip/gzip.cmi
+  /usr/lib/ocaml/zip/gzip.cmx
+  /usr/lib/ocaml/zip/gzip.mli
+  /usr/lib/ocaml/zip/libcamlzip.a
+  /usr/lib/ocaml/zip/zip.a
+  /usr/lib/ocaml/zip/zip.cma
+  /usr/lib/ocaml/zip/zip.cmi
+  /usr/lib/ocaml/zip/zip.cmx
+  /usr/lib/ocaml/zip/zip.cmxa
+  /usr/lib/ocaml/zip/zip.mli
+  /usr/share/doc/Cygwin/camlzip-1.03.README
+  /usr/share/doc/camlzip-1.03/Changes
+  /usr/share/doc/camlzip-1.03/LICENSE
+  /usr/share/doc/camlzip-1.03/README
+
+------------------
+
+Port Notes:
+
+----- version 1.03-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
