@@ -1,4 +1,4 @@
-category: OCaml
+category: OCaml Archive
 requires: cygwin ocaml zlib
 sdesc: "OCaml ZIP/GZIP library"
 ldesc: "This Objective Caml library provides easy access to compressed 

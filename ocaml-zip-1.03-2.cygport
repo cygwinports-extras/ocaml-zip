@@ -1,0 +1,22 @@
+ORIG_PN="camlzip"
+inherit ocaml
+
+DESCRIPTION="OCaml file compression library"
+HOMEPAGE="http://cristal.inria.fr/~xleroy/software.html"
+SRC_URI="http://caml.inria.fr/distrib/bazar-ocaml/${ORIG_PN}-${PV}.tar.gz"
+
+MAKEOPTS+=" -j1"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake all allopt
+}
+
+src_install() {
+	cd ${B}
+	cygmake install installopt INSTALLDIR=${D}${OCAML_LIBDIR}/zip
+
+	dodir ${OCAML_STUBDIR}
+	mv ${D}${OCAML_LIBDIR}/zip/dll*.so ${D}${OCAML_STUBDIR}/
+}
