@@ -1,4 +1,4 @@
-camlzip
+ocaml-zip
 ------------------------------------------
 This Objective Caml library provides easy access to compressed files in 
 ZIP and GZIP format, as well as to Java JAR files.  It provides 
@@ -28,15 +28,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack camlzip-1.03-X-src.tar.bz2
+  unpack ocaml-zip-1.03-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./camlzip-1.03-X.cygport all
+  cygport ./ocaml-zip-1.03-X.cygport all
 
 This will create:
-  /usr/src/camlzip-1.03-X-src.tar.bz2
-  /usr/src/camlzip-1.03-X.tar.bz2
+  /usr/src/ocaml-zip-1.03-X-src.tar.bz2
+  /usr/src/ocaml-zip-1.03-X.tar.bz2
 
 -------------------------------------------
 
@@ -53,10 +53,10 @@ Files included in the binary package:
   /usr/lib/ocaml/3.10/zip/zip.cmx
   /usr/lib/ocaml/3.10/zip/zip.cmxa
   /usr/lib/ocaml/3.10/zip/zip.mli
-  /usr/share/doc/Cygwin/camlzip-1.03.README
-  /usr/share/doc/camlzip-1.03/Changes
-  /usr/share/doc/camlzip-1.03/LICENSE
-  /usr/share/doc/camlzip-1.03/README
+  /usr/share/doc/Cygwin/ocaml-zip-1.03.README
+  /usr/share/doc/ocaml-zip-1.03/Changes
+  /usr/share/doc/ocaml-zip-1.03/LICENSE
+  /usr/share/doc/ocaml-zip-1.03/README
 
 ------------------
 
