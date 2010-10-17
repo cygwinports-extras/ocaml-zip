@@ -6,18 +6,15 @@ functions for reading from and writing to compressed files in these
 formats.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  ocaml-3.10.0-1
-  zlib-1.2.3-2
+  cygwin-1.7.7-1
+  ocaml-base-3.12.0-4
+  zlib0-1.2.5-1
 
 Build requirements:
-  cygwin-1.5.25-7
-  binutils-20060817-1
-  cygport-0.3.8-1
-  gcc-core-3.4.4-3
-  make-3.81-1
-  ocaml-3.10.0-1
-  zlib-1.2.3-2
+  binutils-2.20.51-2
+  cygport-0.10.0-1
+  gcc4-core-4.5.0-1
+  make-3.81-2
 
 Canonical website:
   http://cristal.inria.fr/~xleroy/software.html
@@ -28,45 +25,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-zip-1.03-X-src.tar.bz2
+  unpack ocaml-zip-1.04-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-zip-1.03-X.cygport all
+  cygport ./ocaml-zip-1.04-X.cygport all
 
 This will create:
-  /usr/src/ocaml-zip-1.03-X-src.tar.bz2
-  /usr/src/ocaml-zip-1.03-X.tar.bz2
+  /usr/src/ocaml-zip-1.04-X-src.tar.bz2
+  /usr/src/ocaml-zip-1.04-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/ocaml/3.10/stublibs/dllcamlzip.so
-  /usr/lib/ocaml/3.10/zip/gzip.cmi
-  /usr/lib/ocaml/3.10/zip/gzip.cmx
-  /usr/lib/ocaml/3.10/zip/gzip.mli
-  /usr/lib/ocaml/3.10/zip/libcamlzip.a
-  /usr/lib/ocaml/3.10/zip/zip.a
-  /usr/lib/ocaml/3.10/zip/zip.cma
-  /usr/lib/ocaml/3.10/zip/zip.cmi
-  /usr/lib/ocaml/3.10/zip/zip.cmx
-  /usr/lib/ocaml/3.10/zip/zip.cmxa
-  /usr/lib/ocaml/3.10/zip/zip.mli
-  /usr/share/doc/Cygwin/ocaml-zip-1.03.README
-  /usr/share/doc/ocaml-zip-1.03/Changes
-  /usr/share/doc/ocaml-zip-1.03/LICENSE
-  /usr/share/doc/ocaml-zip-1.03/README
-
-------------------
-
 Port Notes:
 
------ version 1.03-2 -----
-Rebuilt for OCaml 3.10.
-
------ version 1.03-1 -----
-Initial release for Cygwin.
+----- version 1.04-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

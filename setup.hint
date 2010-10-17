@@ -1,5 +1,5 @@
-category: OCaml Archive
-requires: ocaml zlib
+category: OCaml
+requires: ocaml-base zlib0 zlib-devel
 sdesc: "OCaml ZIP/GZIP library"
 ldesc: "This Objective Caml library provides easy access to compressed 
 files in ZIP and GZIP format, as well as to Java JAR files.  It provides 
