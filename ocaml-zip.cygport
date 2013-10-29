@@ -1,0 +1,29 @@
+inherit ocaml
+
+NAME="ocaml-zip"
+VERSION=1.04
+RELEASE=2
+CATEGORY="Libs"
+SUMMARY="OCaml ZIP/GZIP library"
+DESCRIPTION="This Objective Caml library provides easy access to compressed
+files in ZIP and GZIP format, as well as to Java JAR files.  It provides
+functions for reading from and writing to compressed files in these formats."
+HOMEPAGE="http://cristal.inria.fr/~xleroy/software.html"
+SRC_URI="http://caml.inria.fr/distrib/bazar-ocaml/camlzip-${VERSION}.tar.gz"
+SRC_DIR="camlzip-${VERSION}"
+
+MAKEOPTS+=" -j1"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake all allopt
+}
+
+src_install() {
+	cd ${B}
+	cygmake install installopt INSTALLDIR=${D}${OCAML_LIBDIR}/zip
+
+	dodir ${OCAML_STUBDIR}
+	mv ${D}${OCAML_LIBDIR}/zip/dll*.so ${D}${OCAML_STUBDIR}/
+}
