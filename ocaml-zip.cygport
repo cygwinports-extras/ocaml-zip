@@ -22,8 +22,8 @@ src_compile() {
 
 src_install() {
 	cd ${B}
-	cygmake install installopt INSTALLDIR=${D}${OCAML_LIBDIR}/zip
-
 	dodir ${OCAML_STUBDIR}
-	mv ${D}${OCAML_LIBDIR}/zip/dll*.so ${D}${OCAML_STUBDIR}/
+	export OCAMLFIND_DESTDIR="${D}${OCAML_LIBDIR}"
+	export OCAMLFIND_LDCONF=ignore
+	cygmake install-findlib # INSTALLDIR=${D}${OCAML_LIBDIR}/zip
 }
